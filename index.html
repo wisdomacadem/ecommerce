@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOVARO Menswear | Premium Affordable Clothing</title>
+  <meta name="description" content="NOVARO Menswear is a premium but affordable men's clothing store concept with cart, checkout, filters, wishlist and social links." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">
+    <span>Free U.S. shipping over $75</span>
+    <span>New drop: Heritage Essentials</span>
+    <span>Premium fit. Affordable price.</span>
+  </div>
+
+  <header class="site-header" id="top">
+    <nav class="nav">
+      <a class="brand" href="#top" aria-label="NOVARO home">
+        <span class="logo-mark">N</span>
+        <span>
+          <strong>NOVARO</strong>
+          <small>Menswear</small>
+        </span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#collection">Collection</a>
+        <a href="#fit-guide">Fit Guide</a>
+        <a href="#lookbook">Lookbook</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">◐</button>
+        <button class="cart-button" id="openCart">
+          <span>Cart</span>
+          <strong id="cartCount">0</strong>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">New affordable luxury brand concept</p>
+        <h1>Sharp menswear for men building a serious life.</h1>
+        <p class="hero-text">Inspired by the clean American style of Tommy Hilfiger, Guess and Calvin Klein — but built as a fresh portfolio-ready brand with modern UI, filters, cart, checkout, and premium product storytelling.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#collection">Shop Collection</a>
+          <a class="btn secondary" href="#lookbook">View Lookbook</a>
+        </div>
+        <div class="trust-row">
+          <span>Secure checkout UI</span>
+          <span>30-day returns</span>
+          <span>4.9★ customer rating</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="model-card card-one">
+          <span>Oxford Shirt</span>
+          <strong>$48</strong>
+        </div>
+        <div class="model-card card-two">
+          <span>Signature Bomber</span>
+          <strong>$89</strong>
+        </div>
+        <div class="hero-logo">NV</div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <article><strong>18</strong><span>Premium basics</span></article>
+      <article><strong>$35–$129</strong><span>Affordable pricing</span></article>
+      <article><strong>3</strong><span>Payment methods</span></article>
+      <article><strong>24/7</strong><span>Online storefront</span></article>
+    </section>
+
+    <section class="section" id="collection">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Shop</p>
+          <h2>Heritage Essentials Collection</h2>
+        </div>
+        <div class="search-box">
+          <input type="search" id="searchInput" placeholder="Search shirts, jackets, denim..." />
+        </div>
+      </div>
+
+      <div class="shop-layout">
+        <aside class="filters">
+          <h3>Filters</h3>
+          <label>Category
+            <select id="categoryFilter">
+              <option value="all">All</option>
+              <option value="Shirts">Shirts</option>
+              <option value="Jackets">Jackets</option>
+              <option value="Denim">Denim</option>
+              <option value="Knitwear">Knitwear</option>
+              <option value="Accessories">Accessories</option>
+            </select>
+          </label>
+          <label>Sort
+            <select id="sortFilter">
+              <option value="featured">Featured</option>
+              <option value="low">Price: Low to High</option>
+              <option value="high">Price: High to Low</option>
+              <option value="rating">Top Rated</option>
+            </select>
+          </label>
+          <label class="range-label">Max price: <strong id="priceOutput">$150</strong>
+            <input type="range" id="priceRange" min="30" max="150" value="150" />
+          </label>
+          <button class="btn full" id="resetFilters">Reset Filters</button>
+        </aside>
+
+        <div>
+          <div class="product-toolbar">
+            <span id="resultCount">0 products</span>
+            <button class="mini-btn" id="clearWishlist">Clear Wishlist</button>
+          </div>
+          <div class="product-grid" id="productGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo-band">
+      <div>
+        <p class="eyebrow">Limited bundle</p>
+        <h2>Build your starter wardrobe</h2>
+        <p>Buy any shirt + denim + jacket and the cart automatically applies a 10% bundle discount.</p>
+      </div>
+      <a class="btn primary" href="#collection">Start Building</a>
+    </section>
+
+    <section class="section split" id="fit-guide">
+      <div>
+        <p class="eyebrow">Fit Guide</p>
+        <h2>Designed for clean lines and everyday comfort.</h2>
+        <p>NOVARO uses a modern athletic fit: room in the shoulders, slimmer at the waist, not too tight. Each product card includes size buttons and color choices.</p>
+      </div>
+      <div class="fit-table">
+        <div><strong>S</strong><span>Chest 36–38</span></div>
+        <div><strong>M</strong><span>Chest 39–41</span></div>
+        <div><strong>L</strong><span>Chest 42–44</span></div>
+        <div><strong>XL</strong><span>Chest 45–48</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="lookbook">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Lookbook</p>
+          <h2>Three outfits, one brand identity.</h2>
+        </div>
+      </div>
+      <div class="lookbook-grid">
+        <article><span>01</span><h3>Weekend Classic</h3><p>Oxford shirt, dark denim, white sneakers.</p></article>
+        <article><span>02</span><h3>City Night</h3><p>Black bomber, fitted tee, slim jeans.</p></article>
+        <article><span>03</span><h3>Business Casual</h3><p>Knit polo, tailored chinos, leather belt.</p></article>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <p class="eyebrow">Social proof</p>
+      <h2>Customer reviews</h2>
+      <div class="review-grid">
+        <blockquote>“Looks expensive, feels comfortable, price is fair.”<cite>— Marcus</cite></blockquote>
+        <blockquote>“The product page and cart are clean like a real brand.”<cite>— Recruiter note</cite></blockquote>
+        <blockquote>“This is the kind of project that shows UI, JavaScript and business thinking.”<cite>— Portfolio feedback</cite></blockquote>
+      </div>
+    </section>
+
+    <section class="newsletter" id="contact">
+      <div>
+        <p class="eyebrow">Join the list</p>
+        <h2>Get 15% off your first order.</h2>
+      </div>
+      <form id="newsletterForm">
+        <input type="email" placeholder="Email address" required />
+        <button class="btn primary">Subscribe</button>
+      </form>
+      <div class="socials" aria-label="Social links">
+        <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://tiktok.com" target="_blank" rel="noreferrer">TikTok</a>
+        <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+        <a href="https://x.com" target="_blank" rel="noreferrer">X</a>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button class="icon-btn" id="closeCart">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-summary">
+      <div><span>Subtotal</span><strong id="subtotal">$0.00</strong></div>
+      <div><span>Bundle discount</span><strong id="discount">-$0.00</strong></div>
+      <div><span>Shipping</span><strong id="shipping">$0.00</strong></div>
+      <div class="total"><span>Total</span><strong id="total">$0.00</strong></div>
+    </div>
+    <div class="payment-box">
+      <h3>Payment Method</h3>
+      <label><input type="radio" name="payment" checked /> Credit / Debit Card</label>
+      <label><input type="radio" name="payment" /> PayPal</label>
+      <label><input type="radio" name="payment" /> Apple Pay / Google Pay</label>
+      <input type="text" placeholder="Card number 4242 4242 4242 4242" />
+      <div class="payment-row">
+        <input type="text" placeholder="MM/YY" />
+        <input type="text" placeholder="CVC" />
+      </div>
+      <button class="btn primary full" id="checkoutBtn">Checkout Demo</button>
+      <small>This is a front-end demo. No real payment is processed.</small>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+  <div class="toast" id="toast"></div>
+
+  <footer>
+    <a class="brand" href="#top"><span class="logo-mark">N</span><span><strong>NOVARO</strong><small>Menswear</small></span></a>
+    <p>© 2026 NOVARO Menswear. Portfolio e-commerce demo.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
